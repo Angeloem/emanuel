@@ -1,0 +1,42 @@
+
+.changeText{
+    text-align: center;
+    font-family: "Aileron Thin", sans-serif;
+
+    transition: all 1s ease-in;
+    filter: grayscale(2);
+}
+
+.separation-line {
+    margin: 0 20px;
+    height: 300px;
+    width: 1px;
+    background: black;
+    filter: grayscale(100%);
+}
+
+#top {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    opacity: .5;
+}
+
+#bottom {
+    border-top: 1px solid black;
+    font-size: 20px;
+    opacity: .5;
+}
+
+#mainView {
+    font-size: 35px;
+    transition: 1s all linear;
+    height: fit-content;
+}
+
+#mainView div {
+    height: 150%;
+}
+
+.work-done-header {
+    text-align: left;
+}

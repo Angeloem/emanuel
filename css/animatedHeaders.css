@@ -1,0 +1,46 @@
+.animatable-container {
+    position: relative;
+    flex: 1 1 50%;
+
+}
+
+.ans1 {
+    position: absolute;
+    top: 0;
+    animation: ans1 4s linear forwards infinite;
+}
+.ans2 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    animation: ans1 4s 1s linear forwards infinite;
+}
+.ans3 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    animation: ans1 4s 2s linear forwards infinite;
+}
+.ans4 {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    animation: ans1 4s 3s linear forwards infinite;
+}
+
+
+
+@keyframes ans1 {
+    0% {
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

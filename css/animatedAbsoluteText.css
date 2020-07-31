@@ -1,0 +1,18 @@
+#bold-text1 {
+    animation: flip 6010ms ease-out forwards infinite;
+}
+
+@keyframes flip {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

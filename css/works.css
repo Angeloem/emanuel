@@ -1,0 +1,24 @@
+.work-done {
+    margin: 10px 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.done-container {
+    margin: 0 5px;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.done-container img {
+    height: 100%;
+    width: 100%;
+}
+

@@ -1,0 +1,161 @@
+@media all and (max-width: 1359px) {
+    .top-container, .top-right-container {
+        display: none;
+    }
+
+    .popper {
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .profile-list {
+        display: block;
+        position: absolute;
+        top: 8%;
+        opacity: 0;
+        padding: 20px;
+        left: 120px;
+        animation: fromBottom .5s .5s ease-in-out forwards;
+    }
+
+    #in {
+        left: 70%;
+        animation: fromTop .3s ease-in forwards;
+    }
+
+    #brief {
+        top: 60%;
+        left: 10%;
+        animation: fromLeft .5s ease-in forwards;
+    }
+
+    #profile {
+        display: block;
+        top: 0;
+        left: -100px;
+        opacity: 0;
+        animation: fromSide .6s ease-out forwards;
+    }
+
+    #skills {
+        display: block;
+        top: 15%;
+        opacity: 0;
+        animation: _fromSide .6s ease-out forwards;
+    }
+
+    #profile-info {
+        display: block;
+        right: 70%;
+        top: 22%;
+        opacity: 0;
+        animation: _fromTop .3s .6s ease-out forwards;
+    }
+
+    #down-profile-info {
+        opacity: 0;
+        display: block;
+        animation: opace .5s .7s ease-out forwards;
+    }
+
+    .minimal-content-holder, .minimal-content-holder-opposite {
+        display: flex;
+        opacity: .8;
+        animation: scaleDown .5s ease-in forwards;
+    }
+
+    @keyframes fromTop {
+        from {
+            top: -100px;
+        }
+        to {
+            top: 50px;
+        }
+    }
+
+    @keyframes fromBottom {
+        from {
+            opacity: 0;
+            top: 8%;
+        }
+        to {
+            opacity: 1;
+            top: 5%;
+        }
+    }
+
+    @keyframes fromLeft {
+        from {
+            left: -100px;
+        }
+        to {
+            left: 50px;
+        }
+    }
+
+    @keyframes fromSide {
+        from {
+            left: -100px;
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+            left: 5%;
+        }
+    }
+
+    @keyframes _fromSide {
+        from {
+            right: -100px;
+            opacity: 0;
+        }
+        to {
+            right: 80%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes _fromTop {
+        from {
+            opacity: 0;
+            top: 15%;
+        }
+        to {
+            opacity: 1;
+            top: 22%;
+        }
+    }
+
+    @keyframes scaleDown {
+        from {
+            transform: scale(1.3, 1.3);
+        }
+        to {
+            transform: scale(1, 1);
+        }
+    }
+
+    @keyframes opace {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media all and (
+max-width: 701px
+) {
+
+    .content {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .separation-line {
+        display: none;
+    }
+}

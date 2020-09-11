@@ -1,0 +1,74 @@
+.minimal-content-holder {
+    display: none;
+    height: 75%;
+    width: 75%;
+    background: white;
+    border: 1px solid white;
+    border-top-left-radius: 10%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(65deg);
+}
+
+.minimal-content-holder-opposite {
+    display: none;
+    height: 75%;
+    width: 75%;
+    background: white;
+    border: 1px solid white;
+    border-bottom-right-radius: 40%;
+    position: absolute;
+    top: -30%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+}
+
+.popper {
+    display: none;
+    font-size: 14em;
+    color: white;
+    font-weight: bolder;
+}
+
+.profile-list{
+    display: none;
+    z-index: 2;
+    color: black;
+    font-size: 1.5rem;
+}
+
+#profile, #skills, #profile-info /*#skills_bottom*/
+{
+    display: none;
+    position: absolute;
+    font-size: 3rem;
+    z-index: 2;
+    color: black;
+    text-transform: capitalize;
+}
+
+.profile-info, #profile-info {
+    font-size: 1.5rem;
+}
+
+.profile-info {
+    margin: 10px 0;
+}
+
+#skills_bottom {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+#down-profile-info {
+    padding: 20px;
+    display: none;
+    position: absolute;
+    z-index: 4;
+    color: black;
+    top: 50%;
+    left: 50%;
+}
+

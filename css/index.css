@@ -26,16 +26,16 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 1px #000;
-    height: 50px;
+    height: 10vh;
 }
 
 .name {
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 .image {
-    height: 60px;
-    width: 60px;
+    height: 9vh;
+    width: 9vh;
 }
 
 .image-container {
@@ -58,7 +58,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: fit-content;
+    /*height: fit-content;*/
 }
 
 .que {

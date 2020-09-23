@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/generics.css">
     <link rel="stylesheet" href="css/mediaqueriedSecondPane.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/bottomContacts.css">
 </head>
 <body>
 <div id="particles-js" class="first-pane">
@@ -87,76 +88,74 @@
     </div>-->
 </div>
 <div class="second-pane" id="second-pane">
-    <div class="minimal-contents">
-        <div class="headers">
-<!--            <div class="popper" id="in">In</div>-->
-<!--            <div class="popper" id="brief">brief</div>-->
-        </div>
-        <div>
-            <ul class="profile-list">
-                <li>Name: Emanuel Sanga</li>
-                <li>Status: Fresh graduate</li>
-            </ul>
-        </div>
-        <div class="items-poppers">
-            <div class="first-pane-headers">
+    <!-- <div class="minimal-contents">
+         <div class="headers">
+             &lt;!&ndash;            <div class="popper" id="in">In</div>&ndash;&gt;
+             &lt;!&ndash;            <div class="popper" id="brief">brief</div>&ndash;&gt;
+         </div>
+     </div>-->
+    <div class="minimal-content-holder-opposite">
+        <div class="first-pane-headers">
+            <div>
                 <div id="profile">Profile</div>
-                <div id="skills">skills</div>
-                <div class="profile-info" id="profile-info">
-                    <ul>
-                        <li>
-                            <div>Frontend Dev</div>
-                            <ul>
-                                <li>Angular</li>
-                                <li>React</li>
-                                <li>Django</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="down-profile-info">
-                    <div id="skills_bottom">skills</div>
-                    <div class="profile-info">
-                        <ul>
-                            <li>
-                                <div>Backend dev</div>
-                                <ul>
-                                    <li>Django</li>
-                                    <li>NestJs</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="profile-info">
-                        <ul>
-                            <li>
-                                <div>Mobile dev</div>
-                                <ul>
-                                    <li>Flutter</li>
-                                    <li>Ionic</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="profile-info">
-                        <ul>
-                            <li>
-                                <div>Data science</div>
-                                <ul>
-                                    <li>Keras</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="profile-list">
+                    <li>Name: Emanuel Sanga</li>
+                    <li>Status: Fresh graduate</li>
+                </ul>
             </div>
         </div>
     </div>
-    <div class="minimal-content-holder">
-
+    <div class="minimal-content-holder" onscroll="moveLeft()">
+        <div id="down-profile-info">
+            <div id="skills_bottom">skills</div>
+            <div class="profile-info">
+                <ul>
+                    <li>
+                        <div>Backend dev</div>
+                        <ul>
+                            <li>Django</li>
+                            <li>NestJs</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-info">
+                <ul>
+                    <li>
+                        <div>Mobile dev</div>
+                        <ul>
+                            <li>Flutter</li>
+                            <li>Ionic</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-info">
+                <ul>
+                    <li>
+                        <div>Data science</div>
+                        <ul>
+                            <li>Keras</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="minimal-content-holder-opposite">
-
+    <div class="minimal-content-movable">
+        <div class="profile-info" id="profile-info">
+            <div id="skills">skills</div>
+            <ul>
+                <li>
+                    <div>Frontend Dev</div>
+                    <ul>
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>Django</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="top-container">
         <div class="underline">In Brief</div>
@@ -633,15 +632,39 @@
                                 </a>
                                 LinkedIn
                             </div>
-                            <div class="content-container-carrier">
-                                <div class="content-container">
-                                    <i class="fas fa-envelope-open"></i>
+                            <div class="content-container-carrier" onmouseover="hidePhone()" onmouseout="showPhone()">
+                                <div id="mail">
+                                    <div class="content-container">
+                                        <i class="fas fa-envelope-open to-hide"></i>
+                                        <div class="hovered">
+                                            <div class="icon-container">
+                                                <i class="fas fa-envelope-open"></i>
+                                            </div>
+                                            <div class="hovered-contents">
+                                                <div>Gmail: esanga530@gmail.com </div>
+                                                <div>Live:<br> esanga@live.com</div>
+                                                <div id="_copy" onclick="copy('esanga530@gmail.com')"><i class="far fa-copy"></i></div>
+                                                <div id="_copy1" onclick="copy('esanga@live.com')"><i class="far fa-copy"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    Mail
                                 </div>
-                                Mail
                             </div>
-                            <div class="content-container-carrier">
-                                <div class="content-container">
-                                    <i class="fas fa-phone"></i>
+                            <div class="content-container-carrier" id="phone-container">
+                                <div id="phone">
+                                    <div class="content-container">
+                                        <i class="fas fa-phone"></i>
+                                        <div class="hovered">
+                                            <div class="icon-container">
+                                                <i class="fas fa-envelope-open"></i>
+                                            </div>
+                                            <div>
+                                                <div>Telegram: 0738749926</div>
+                                                <div>WhatsApp: 0737777482</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 Phone Number
                             </div>
@@ -687,6 +710,8 @@
     </div>
 </div>
 <script src="javascript/textPopper.js"></script>
+<script src="javascript/moveText.js"></script>
+<script src="javascript/hideElements.js"></script>
 <script src="javascript/centerText.js"></script>
 <script src="javascript/particles.js-master/particles.js"></script>
 </body>

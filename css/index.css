@@ -263,10 +263,12 @@ ul {
 }
 
 .content-container {
+    position: relative;
     padding: 50px;
     margin: 5px;
-    border: 2px solid black;
+    border: 4px inset black;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .content-container i {
@@ -277,4 +279,5 @@ ul {
     font-size: 16px;
     text-align: center;
     cursor: pointer;
+    width: fit-content;
 }

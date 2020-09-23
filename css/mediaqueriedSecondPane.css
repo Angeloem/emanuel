@@ -1,28 +1,43 @@
 .minimal-content-holder {
     display: none;
-    height: 75%;
-    width: 75%;
     background: white;
     border: 1px solid white;
-    border-top-left-radius: 10%;
+    border-radius: 50px;
     overflow: hidden;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(65deg);
+    left: 70%;
+    transform: translate(-70%, -50%);
 }
 
 .minimal-content-holder-opposite {
     display: none;
-    height: 75%;
-    width: 75%;
     background: white;
     border: 1px solid white;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 50px;
+}
+
+.minimal-content-movable {
+    display: none;
+    background: white;
+    border: 1px solid white;
+    border-top-right-radius: 40%;
     border-bottom-right-radius: 40%;
     position: absolute;
-    top: -30%;
-    left: -20%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 0;
+    padding: 20px;
+}
+
+.first-pane-headers {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .popper {
@@ -33,7 +48,6 @@
 }
 
 .profile-list{
-    display: none;
     z-index: 2;
     color: black;
     font-size: 1.5rem;
@@ -41,8 +55,6 @@
 
 #profile, #skills, #profile-info /*#skills_bottom*/
 {
-    display: none;
-    position: absolute;
     font-size: 3rem;
     z-index: 2;
     color: black;
@@ -64,11 +76,8 @@
 
 #down-profile-info {
     padding: 20px;
-    display: none;
-    position: absolute;
+    position: relative;
     z-index: 4;
     color: black;
-    top: 50%;
-    left: 50%;
 }
 

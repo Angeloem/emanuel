@@ -11,11 +11,7 @@
 
     .profile-list {
         display: block;
-        position: absolute;
-        top: 8%;
         opacity: 0;
-        padding: 20px;
-        left: 120px;
         animation: fromBottom .5s .5s ease-in-out forwards;
     }
 
@@ -32,10 +28,14 @@
 
     #profile {
         display: block;
-        top: 0;
-        left: -100px;
         opacity: 0;
         animation: fromSide .6s ease-out forwards;
+    }
+
+    #skills_bottom {
+        display: block;
+        opacity: 0;
+        animation: fromSide .6s .5s ease-out forwards;
     }
 
     #skills {
@@ -59,7 +59,7 @@
         animation: opace .5s .7s ease-out forwards;
     }
 
-    .minimal-content-holder, .minimal-content-holder-opposite {
+    .minimal-content-holder, .minimal-content-holder-opposite, .minimal-content-movable {
         display: flex;
         opacity: .8;
         animation: scaleDown .5s ease-in forwards;
@@ -96,12 +96,12 @@
 
     @keyframes fromSide {
         from {
-            left: -100px;
             opacity: 0;
+            transform: translate(-100px, -50px);
         }
         to {
             opacity: 1;
-            left: 5%;
+            transform: translate(0, 0);
         }
     }
 
@@ -109,10 +109,12 @@
         from {
             right: -100px;
             opacity: 0;
+            transform: translate(-100px, -50px);
         }
         to {
             right: 80%;
             opacity: 1;
+            transform: translate(0, 0);
         }
     }
 

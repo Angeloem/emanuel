@@ -632,7 +632,12 @@
                                 </a>
                                 LinkedIn
                             </div>
-                            <div class="content-container-carrier" onmouseover="hidePhone()" onmouseout="showPhone()">
+                            <div
+                                    class="content-container-carrier"
+                                    id="mail-container"
+                                    onmouseover="hidePhone()"
+                                    onmouseout="showPhone()"
+                            >
                                 <div id="mail">
                                     <div class="content-container">
                                         <i class="fas fa-envelope-open to-hide"></i>
@@ -641,32 +646,43 @@
                                                 <i class="fas fa-envelope-open"></i>
                                             </div>
                                             <div class="hovered-contents">
-                                                <div>Gmail: esanga530@gmail.com </div>
+                                                <div>Gmail: esanga530@gmail.com</div>
                                                 <div>Live:<br> esanga@live.com</div>
-                                                <div id="_copy" onclick="copy('esanga530@gmail.com')"><i class="far fa-copy"></i></div>
-                                                <div id="_copy1" onclick="copy('esanga@live.com')"><i class="far fa-copy"></i></div>
+                                                <div id="_copy" onclick="copy('esanga530@gmail.com')"><i
+                                                        class="far fa-copy"></i></div>
+                                                <div id="_copy1" onclick="copy('esanga@live.com')"><i
+                                                        class="far fa-copy"></i></div>
                                             </div>
                                         </div>
                                     </div>
                                     Mail
                                 </div>
                             </div>
-                            <div class="content-container-carrier" id="phone-container">
+                            <div
+                                    class="content-container-carrier"
+                                    id="phone-container"
+                                    onmouseover="hideMail()"
+                                    onmouseout="showMail()"
+                            >
                                 <div id="phone">
                                     <div class="content-container">
-                                        <i class="fas fa-phone"></i>
+                                        <i class="fas fa-phone to-hide"></i>
                                         <div class="hovered">
                                             <div class="icon-container">
-                                                <i class="fas fa-envelope-open"></i>
+                                                <i class="fas fa-phone"></i>
                                             </div>
-                                            <div>
+                                            <div class="hovered-contents">
                                                 <div>Telegram: 0738749926</div>
-                                                <div>WhatsApp: 0737777482</div>
+                                                <div>WhatsApp & Calls: 0737777482</div>
+                                                <div id="_copyTelegram" onclick="copy('0738749926')"><i
+                                                        class="far fa-copy"></i></div>
+                                                <div id="_copyWhatsApp" onclick="copy('0737777482')"><i
+                                                        class="far fa-copy"></i></div>
                                             </div>
                                         </div>
                                     </div>
+                                    Phone Number
                                 </div>
-                                Phone Number
                             </div>
                         </div>
                     </div>

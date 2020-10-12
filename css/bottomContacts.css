@@ -2,16 +2,16 @@
     display: none;
 }
 
-#mail:hover {
+#mail:hover, #phone:hover {
     position: absolute;
 }
 
-#mail:hover .content-container {
+#mail:hover .content-container, #phone:hover .content-container {
     padding: 0;
     height: 130px;
 }
 
-#mail:hover .hovered{
+#mail:hover .hovered, #phone:hover .hovered{
     transition: 1s all linear;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@
     animation: width 500ms linear forwards;
 }
 
-#mail:hover .to-hide {
+#mail:hover .to-hide, #phone:hover .to-hide {
     display: none;
 }
 
@@ -67,7 +67,7 @@
     height: 100%;
 }
 
-#_copy, #_copy1 {
+#_copy, #_copy1, #_copyTelegram, #_copyWhatsApp {
     position: absolute;
     left: -55px;
     padding-top: 5%;
@@ -78,19 +78,19 @@
     filter: grayscale(100%);
 }
 
-#_copy {
+#_copy, #_copyTelegram {
     top: -15px;
 }
 
-#_copy1 {
+#_copy1, #_copyWhatsApp {
     top: 50%;
 }
 
 @keyframes width {
     from {
-        width: 0;
+        opacity: 0;
     }
     to {
-        width: fit-content;
+        opacity: 1;
     }
 }

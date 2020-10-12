@@ -1,1 +1,8 @@
 [0923/132255.383:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1012/111417.322:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\esanga\AppData\Local\Microsoft\Edge Dev\User Data\Crashpad\attachments\4a70d59b-d037-4545-874c-fb715fbe941e: The system cannot find the path specified. (0x3)
+[1012/111417.335:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\esanga\AppData\Local\Microsoft\Edge Dev\User Data\Crashpad\attachments\7522a6ce-7a6f-472a-b555-4614c496e64f: The system cannot find the path specified. (0x3)
+[1012/111417.344:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\esanga\AppData\Local\Microsoft\Edge Dev\User Data\Crashpad\attachments\c573638f-47fc-4b15-8498-45c2047f6327: The system cannot find the path specified. (0x3)
+[1012/111417.354:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\esanga\AppData\Local\Microsoft\Edge Dev\User Data\Crashpad\attachments\cdb73b6d-531f-4468-b775-25a0c3bbbe43: The system cannot find the path specified. (0x3)
+[1012/111417.355:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\esanga\AppData\Local\Microsoft\Edge Dev\User Data\Crashpad\attachments\d28fb799-2af6-4ae1-aec3-93831e895ae5: The system cannot find the path specified. (0x3)
+[1012/111417.367:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\esanga\AppData\Local\Microsoft\Edge Dev\User Data\Crashpad\attachments\f7834cc9-48d9-455d-9293-efdeda14fc97: The system cannot find the path specified. (0x3)
+[1012/111417.369:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

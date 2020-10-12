@@ -1,4 +1,5 @@
 const phone = document.querySelector('#phone-container')
+const mail = document.querySelector('#mail-container')
 
 function hidePhone() {
     phone.style.display = 'none'
@@ -6,6 +7,14 @@ function hidePhone() {
 
 function showPhone() {
     phone.style.display = 'block'
+}
+
+function hideMail() {
+    mail.style.display = 'none';
+}
+
+function showMail() {
+    mail.style.display = 'block';
 }
 
 function copy(text) {
